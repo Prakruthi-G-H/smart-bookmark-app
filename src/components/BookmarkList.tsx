@@ -9,7 +9,7 @@ export default function BookmarkList({ initialBookmarks }: { initialBookmarks: B
     const supabase = createClient()
 
     useEffect(() => {
-        // Set initial bookmarks in case they weren't passed or to ensure client sync
+
         setBookmarks(initialBookmarks)
 
         const channel = supabase
